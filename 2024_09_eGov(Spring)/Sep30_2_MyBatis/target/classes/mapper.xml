@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="productMapper">
+	<select id="gettt" resultType="com.lhj.sep302mb.product.Product">
+		select * from sep30_product order by p_name
+	</select>
+	<select id="searchhh" parameterType="com.lhj.sep302mb.product.Product" resultType="com.lhj.sep302mb.product.Product">
+		select * from sep30_product where p_name like '%'||#{p_name}||'%' order by p_name
+	</select>
+	<select id="searchPrice" parameterType="com.lhj.sep302mb.product.Product" resultType="com.lhj.sep302mb.product.Product">
+		select * from sep30_product where p_price &lt;=#{p_price} order by p_name
+	</select>
+	<insert id="regg" parameterType="com.lhj.sep302mb.product.Product">
+		insert into sep30_product values(#{p_name}, #{p_price})
+	</insert>
+	<update id="updatee" parameterType="com.lhj.sep302mb.product.Product2">
+		update sep30_product set p_price = #{price2} where p_price = #{price1}
+	</update>
+</mapper>

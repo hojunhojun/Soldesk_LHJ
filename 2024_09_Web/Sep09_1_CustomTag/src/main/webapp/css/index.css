@@ -1,0 +1,40 @@
+@charset "EUC-KR";
+
+@font-face {
+	font-family: "a";	
+	src: url("365cool.ttf");
+}
+
+#t1 {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	border: black solid 3px;
+	height: 230px; 
+	font-family: "a";
+}
+
+#siteTitle {
+	background-color: #FFECB3;
+	text-align: center;
+	font-weight: 900;
+	font-size: 30px;
+}
+
+#siteMenu {
+	background-color: #FFF8E1;
+	border-top: black solid 3px;
+	border-bottom: black solid 3px;
+	margin: 15px;
+}
+
+#siteMenu a {
+	margin: 30px;
+	font-size: 25px;
+	font-weight: 500;
+}
+
+#siteContent {
+	padding: 30px;
+	height: 300px;
+}

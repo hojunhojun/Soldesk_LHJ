@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var ua = navigator.userAgent;
+	if (ua.indexOf("Android") != -1 || ua.indexOf("iPhone") != -1) {
+		// loaction.href = "MobileHomeController";
+		alert("모바일");
+	} else {
+		location.href = "HomeController";
+	}
+</script>
+</head>
+<body>
+</body>
+</html>

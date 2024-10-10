@@ -1,0 +1,82 @@
+@charset "EUC-KR";
+
+@font-face {
+	/* 
+		폰트파일 : 글자별로 디자인이 되어있음
+				영어 총 글자수 : 적음
+				한글 총 글자수 : 많음(용량큼)
+		CSS 웹 폰트 : 애매한 기술
+			설치 안된 폰트도 쓰게해서
+			설치안된 폰트도 쓸수있게 해주는
+			1) CSS3에 추가된 기능 : Internet Explorer에서는 안됨
+			2) 서버가 느리면? 용량이 큰데?
+	*/
+	font-family: "sam3";
+	src: url("Sam3KRFont.ttf");
+}
+
+body {
+	/* 기본 여백 제거작업 */
+	margin: 0px;
+	padding: 0px;
+}
+
+#siteTitleArea {
+	position: fixed;
+	left:0px;
+	top:0px;
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+#siteTitle {
+	font-family: "sam3";
+	width: 1200px;
+	text-align: left;
+	font-weight: 900;
+	color: #69F0AE;
+	font-size: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-shadow: 3px 5px 7px #000000;
+}
+
+#siteMenuArea {
+	border-top: black solid 2px;
+	border-bottom: black solid 2px;
+}
+
+#siteMenu {
+	width: 1200px;
+	text-align: left;
+}
+
+#siteMenu a {
+	color: black;
+	text-decoration: none;
+	font-weight: 800;
+	margin: 20px;
+}
+
+#siteMenu a:hover {
+	color: #304FFE;
+}
+
+#siteMenu a:focus {
+	color: #76FF03;
+}
+
+#siteContentArea {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 160px;
+}
+
+#homeImg {
+	width: 300px;
+	height: 400px;
+	margin-top:70px;
+}

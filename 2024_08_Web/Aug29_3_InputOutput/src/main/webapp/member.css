@@ -1,0 +1,66 @@
+@charset "EUC-KR";
+@font-face {
+	font-family: "a";
+	src: url("365cool.ttf");
+}
+table {
+	margin-left: auto;
+	margin-right: auto;
+	width: 350px;
+	background-color: #FFEBEE;
+	font-family: "a";
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px #000000;
+}
+th {
+	font-size: 30px;
+	padding: 15px;
+}
+
+.textType {
+	border: none;
+	border-bottom: #616161 solid 2px;
+	background-color: transparent;	
+	width: 90%;
+	font-family: "a";
+	outline: none;
+	text-align: center;
+	font-weight: 900px;
+	font-size: 15px;
+}
+
+.button {
+	font-family: "a";
+	padding: 5px;
+}
+.id {
+	text-align: center;
+	padding: 10px;
+	width: 40px;
+}
+.td2 {
+	padding: 10px;
+}
+.td3 {
+	text-align: center;
+	padding: 10px;
+}
+.td4 {
+	font-family: "a";
+	text-align: center;
+	padding: 10px;
+}
+.td6 {
+	padding: 10px;
+}
+.textType::placeholder {
+	color: #424242;
+}
+.textArea {
+	font-family: "a";
+	padding: 10px;
+	width: 80%;
+	height: 70px;
+	border: #616161 solid 2px;
+	resize: none;
+}

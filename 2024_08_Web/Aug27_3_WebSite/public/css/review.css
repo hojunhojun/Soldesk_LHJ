@@ -1,0 +1,31 @@
+@charset "EUC-KR";
+
+.aPost {
+	width: 900px;
+	border: black solid 3px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 3px black inset;
+	margin: 10px;
+}
+
+.post .imgTd {
+	width:110px;
+}
+
+.aPost img {
+	/* 
+		이미지 크기 조절은 안해야함, 딱 맞는 사이즈 이미지를 써야
+		사용자가 업로드하는 프사같은거는 조절할수밖에 없음.
+		큰 -> 작 : 그닥, 작 -> 큰 : 계단현상
+	*/
+	max-width: 100px; /* 100보다 크면 100으로, 100보다 작았으면 원본사이즈 */
+}
+
+.aPost .idTd {
+	font-size: 20px;
+	font-family: "sam3"
+}
+
+.post .txtTd {
+	padding: 30px;
+}

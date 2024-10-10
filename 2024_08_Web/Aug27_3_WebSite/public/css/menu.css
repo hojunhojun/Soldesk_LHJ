@@ -1,0 +1,13 @@
+@charset "EUC-KR";
+
+.anImg {
+	width:200px;
+	box-shadow: 2px 2px 3px black;
+	float: left;
+	margin: 10px;
+}
+
+.anImg img {
+	max-width: 170px;
+	box-shadow: 2px 2px 2px black;
+}

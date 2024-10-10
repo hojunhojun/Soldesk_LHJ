@@ -1,0 +1,42 @@
+<!-- HTML : 뼈대, CSS : 디자인 -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>table</title>
+</head>
+<body>
+	<table border="1" width="300px" height="300px">
+		<tr>
+			<td colspan="2">1</td>	<td rowspan="2">3</td>
+		</tr>
+		<tr>
+			<td rowspan="2">4</td>	<td>5</td>
+		</tr>
+		<tr>
+			<td colspan="2">8</td>
+		</tr>
+	</table>
+	<hr>
+	<table border="1" width="300px" height="300px">
+		<tr>
+			<td rowspan="2">1</td>		<td colspan="2">3</td>
+		</tr>
+		<tr>
+			<td>5</td>		<td>6</td>
+		</tr>
+	</table>
+	<hr>
+	<table border="1" width="300px" height="300px">
+		<tr>
+			<th>1</th>		<td align="center">2</td>
+		</tr>
+		<tr>
+			<td valign="bottom">3</td>		<td valign="top" align="right">4</td>
+		</tr>
+		<tr>
+			<td>5</td>		<td>6</td>
+		</tr>
+	</table>
+</body>
+</html>

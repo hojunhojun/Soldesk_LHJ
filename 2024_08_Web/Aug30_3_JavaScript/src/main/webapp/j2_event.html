@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Event</title>
+<script type="text/javascript">
+	// JavaScript : 웹사이트 이벤트 처리
+	// 직접호출 x
+	// DOM객체의 이벤트에 연결해놓기만 하였음
+	// 이벤트가 발생되면 자동호출됨
+	// -> Callback함수
+	// 1) 함수 정의
+	function showAlert() {
+		for (var i = 0; i < 3; i++) {
+			alert("ㅋ")
+		}
+	}
+</script>
+</head>
+<body>
+	<!-- 2) 이벤트 연결할 DOM객체의 onXXX에 함수현결 -->
+	<h1 ondblclick="showAlert();">ㅋㅋ</h1>
+</body>
+</html>

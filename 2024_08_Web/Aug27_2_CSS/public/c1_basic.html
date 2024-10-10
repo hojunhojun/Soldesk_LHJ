@@ -1,0 +1,78 @@
+<!--
+	CSS(Cascading Style Sheet)
+	HTML DOM객체에 디자인 부여
+	
+	CSS selector : 잘 만들어져있음, css말고 다른분야에서도 활용됨
+	기본형	
+		태그명 - 그것들 다
+		#아이디 - 아이디가 그거인거
+		.클래스 - 클래스가 그거인것들
+	조합형
+		기본형, 기본형, ... - 한꺼번에 선택
+		기본형 기본형 ... - 내부
+		기본형.클래스 - 해당하는 것만
+	상태형
+		기본형:상태 - 그 상태일때
+		
+		
+	선택자 {
+		속성명 : 값;
+		속성명 : 값;
+		...
+	}
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>CSS Basic</title>
+<style type="text/css">
+	h1 {
+		font-size: 50pt;
+	}
+	#aa {
+	/* CSS에서 주석다는법 */
+		color: #43A047;
+	}
+	.bb {
+		/* x y blur color */
+		text-shadow: 3px 5px 7px #8D6E63;
+	}
+	div, span {
+		font-weight: 900; /* 굵게 : 수치조정*/
+	}
+	div h1 {
+		background-color: #FFCC80;
+	}
+	span.bb {
+		font-family: "궁서";
+	}
+	.ccc.bb {
+		/* CCC와 BB 두개가 들어가면 밑줄 */
+		text-decoration: underline;
+	}
+	h3:hover {
+		/* 마우스를 올렸을때 */
+		color: #00E676;
+	}
+	h3:active {
+		/* 누르고 있을때 */
+		color: red;
+	}
+	input:focus {
+		background-color: yellow;
+	}
+</style>
+</head>
+<body>
+	<input> &nbsp; <input>
+	<h3>ㅎㅇ</h3>
+	<div>
+		<h1 class="ccc">ㅠㅠ</h1>
+	</div>
+	<span class="bb ccc">ㅜㅜ</span> <!-- 클래스는 여러개 넣을수도 있음 -->
+	<h1 id="aa">ㅋㅋㅋ</h1>		<!-- id는 한번밖에사용안됨 -->
+	<h1 class="bb">ㅋㅋㅋ</h1> 	<!-- class는 여러번 사용 가능 -->
+	<h2 class="bb">ㅇㅇ</h2>		<!-- class는 여러번 사용 가능 -->
+</body>
+</html>

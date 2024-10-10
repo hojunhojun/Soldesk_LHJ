@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>제목</title>
+</head>
+<body>
+	한줄바꾸기 <br> 
+	Enter + 줄긋기 <hr> <!-- 이건 Enter + 줄긋기 -->
+	두줄바꾸기 <p> <!-- 이건 원래 문단 처리 하는건데 Enter 2번의 효과로 써도 될듯? -->
+	또 줄 바꾸려면
+	<p align="center">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</p> <!-- 근데 P는 마무리태그 써야함(문단처리) -->
+	<p align="right">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</p> <!-- align 속성을 활용해서 정렬도 가능 -->
+	<p align="left">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</p>
+	<hr>
+	ㅎㅎㅎ ㅎㅎㅎ <!-- 띄어쓰기는 1번밖에 안됨 --> <br>
+	ㅎㅎㅎ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ㅎㅎㅎ <!-- 근데 이거쓰면 넣는만큼 띄어쓰기 잘됨 --> <br>
+	&gt;_&lt; <!-- >, < 이거를 특수문자로 쓰고싶으면 이렇게 --> <br>
+	<font face="궁서" size="7" color="#FF00FF">글자를 꾸며봅시다</font> <br> 
+	<!-- size는 1~7까지 -->
+	<!-- 색 사용시 원색 사용할때는 이름넣어도됨 ex)red, orange, blue -->
+	<!-- 근데 안그럴땐 #RRGGBB 이거로 ㄱㄱ ex)#15ewww, #FF0000 / Tip : android material color 참고 -->
+	<!-- Tip -> RRGGBB : 빛 / #RRGGBBAA : 이건 투명도도 포함된 옵션-->
+	<h1>제목(굵게, 줄바꿈)</h1> <!-- h1~h6까지 있음(h1이 제일 큼) -->
+	<h2>ㅎㅎㅎ</h2>
+	<hr>
+	<h2>과일</h2>
+	<ul type="square"> <!-- 이거는 순서가 없는 목록 -->
+		<li>사과</li>
+		<li>귤</li> <!-- 내부는 <li></li>처리 -->
+		<li>참외</li>
+	</ul>
+	<hr>
+	<h2>전자제품</h2>
+	<ol type="i"> <!-- 이거는 순서가 있는 목록 -->
+		<li>컴퓨터</li>
+		<li>모니터</li> <!-- 내부는 <li></li>처리 -->
+		<li>마우스</li>
+	</ol>
+</body>
+</html>
+<!-- HTML만으로 웹 사이트를 만들기엔 디자인의 한계가 있음 -->
+<!-- Size의 한계, Font가 사용자 컴퓨터에 없는 폰트라면? -->

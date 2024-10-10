@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Join</title>
+<link rel="stylesheet" href="member.css">
+</head>
+<body>
+	<form action="JoinResult" method="post">
+		<table>
+			<tr>
+				<th colspan="2">회원가입</th>
+			</tr>
+			<tr>
+				<td class="id">ID&nbsp;:</td>
+				<td><input class="textType" name="id" 
+						placeholder="필수 입력"
+						autocomplete="off"
+						maxlength="8" autofocus="autofocus"></td>
+			</tr>
+			<tr>
+				<td class="td2">Password&nbsp;:</td>
+				<td><input class="textType" name="pw"
+						type="password" placeholder="필수 입력"></td>
+			</tr>
+			<tr>
+				<td class="td3">성별&nbsp;:</td>
+				<td>
+					<input name="gender" type="radio" value="남">&nbsp; 남자 &nbsp;
+					<input name="gender" type="radio" value="여">&nbsp; 여자 &nbsp;
+					<input name="gender" type="radio" value="기">&nbsp; 기타 &nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td class="td4">집 주소&nbsp;:</td>
+				<td>
+					<select class="textType" name="addr">
+						<option>서울</option>
+						<option>경기</option>
+						<option>기타</option>
+					</select>
+				</td>
+			</tr>
+			<tr>		
+				<td class="td4">관심사&nbsp;:</td>
+				<td>
+					<input type="checkbox" name="hobby" value="IT">IT &nbsp;
+					<input type="checkbox" name="hobby" value="스포츠">스포츠 &nbsp;
+					<input type="checkbox" name="hobby" value="정치">정치 &nbsp;
+					<input type="checkbox" name="hobby" value="경제">경제 &nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td class="td4">자기소개&nbsp;:</td>
+				<td>
+					<textarea name="introduce" class="textArea"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td class="td6" colspan="2" align="center">
+					<button class="button">가입</button>
+					<input type="reset" value="다시" class="button">
+					<input type="image" src="ball.png">							
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

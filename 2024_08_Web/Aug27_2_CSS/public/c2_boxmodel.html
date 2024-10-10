@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>boxmodel</title>
+<style type="text/css">
+	#dd {
+		/*
+			solid double
+			dotted dashed
+			inset outset
+			ridge groove
+		*/
+		/* 색 종류 굵기 */
+		margin:20px; /* 외부 여백 */
+		border-left: #4DB6AC outset 5px;
+		border-right: #4DB6AC outset 5px;
+		border-top: #4DB6AC outset 5px;
+		border-bottom: #4DB6AC outset 5px;
+		padding: 10px; /* 내부 여백 border to 내용물 */
+		width: 100px;
+		height: 100px;
+	}
+	#eeee {
+		border: #7986CB double 2px;
+		padding:7px;
+		width: 100px;
+		height: 100px;
+		position: absolute; /* 좌표체계 : absolute(html기준) or fixed(브라우저기준) */
+		left: 250px; /* right */
+		top: 70px; /* bottom */
+	}
+</style>
+</head>
+<body>
+	<div style="background-color:yellow;">CSS박스모델</div>
+	<div id="dd">CSS는 모든 DOM객체를 박스형태로 관리</div>
+	<div id="eeee">하나더</div>
+</body>
+</html>

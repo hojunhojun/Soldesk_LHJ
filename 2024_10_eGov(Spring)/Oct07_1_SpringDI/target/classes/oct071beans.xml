@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="h" class="com.lhj.oct071sdi.human.Human"></bean>
+	
+	<bean id="h1" class="com.lhj.oct071sdi.human.Human">
+		<constructor-arg value="홍길동"></constructor-arg>
+		<constructor-arg value="30"></constructor-arg>
+	</bean>
+	
+	<bean id="h2" class="com.lhj.oct071sdi.human.Human">
+		<property name="name" value="김길동"></property>
+		<property name="age" value="20"></property>
+	</bean>
+	
+	<bean id="sdf" class="java.text.SimpleDateFormat">
+		<constructor-arg value="yyyy-MM-dd(E)"></constructor-arg>
+	</bean>
+	
+	<bean id="d1" class="com.lhj.oct071sdi.animal.Dog">
+		<constructor-arg value="후추"></constructor-arg>
+		<constructor-arg value="3"></constructor-arg>
+	</bean>
+	
+	<bean id="h3" class="com.lhj.oct071sdi.human.Human">
+		<constructor-arg value="강길동"></constructor-arg>
+		<constructor-arg value="40"></constructor-arg>
+		<constructor-arg ref="d1"></constructor-arg>
+	</bean>
+	
+	<bean id="h4" class="com.lhj.oct071sdi.human.Human">
+		<property name="name" value="조길동"></property>
+		<property name="age" value="35"></property>
+		<property name="pet" ref="d1"></property>
+		<property name="family">
+			<array value-type="java.lang.String">
+				<value>아빠</value>
+				<value>엄마</value>
+			</array>
+		</property>
+		<property name="nickname">
+			<list value-type="java.lang.String">
+				<value>바보</value>
+				<value>똥개</value>
+			</list>
+		</property>
+		<property name="stat">
+			<map key-type="java.lang.String" value-type="java.lang.Double">
+				<entry key="키" value="180"></entry>
+				<entry key="몸무게" value="80"></entry>
+			</map>
+		</property>
+	</bean>
+</beans>

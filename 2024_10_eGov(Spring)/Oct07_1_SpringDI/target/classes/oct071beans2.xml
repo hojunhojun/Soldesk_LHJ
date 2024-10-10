@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+	<bean id="mb1" class="com.lhj.oct071sdi.MealBox">
+		<constructor-arg value="반반도시락"></constructor-arg>
+		<constructor-arg value="6000"></constructor-arg>
+		<constructor-arg>
+			<map key-type="java.lang.String" value-type="java.lang.Double">
+				<entry key="밥" value="150"></entry>
+				<entry key="제육볶음" value="50"></entry>
+				<entry key="소불고기" value="50"></entry>
+				<entry key="김치" value="20"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+	<bean id="c" class="com.lhj.oct071sdi.cvs.CVStore"></bean>
+	<context:annotation-config></context:annotation-config>
+</beans>

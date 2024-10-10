@@ -1,0 +1,36 @@
+@charset "EUC-KR";
+@font-face {
+	font-family: "a";	
+	src: url("365cool.ttf");
+}
+#siteTitle {
+	width: 100%;
+	position: fixed;
+	background-color: #FBE9E7;
+	padding: 15px;
+	text-align: center;
+	font-family: "a";
+	font-size: 30pt;
+	font-weight: 900;
+	top:0px;
+	left:0px;
+}
+
+#siteMenu {
+	width: 100%;
+	position: fixed;
+	background-color: #FFCCBC;
+	padding: 15px;
+	text-align: center;
+	font-family: "a";
+	font-size: 20pt;
+	font-weight: 900;
+	bottom: 0px;
+	left: 0px;
+}
+
+#siteContent {
+	width: 100%;
+	padding-top: 90px;
+	padding-bottom: 90px;
+}

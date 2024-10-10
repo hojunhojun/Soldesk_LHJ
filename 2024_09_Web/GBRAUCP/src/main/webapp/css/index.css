@@ -1,0 +1,55 @@
+@charset "EUC-KR";
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+table {
+	border-spacing: 0px;
+}
+
+body {
+	margin:0px;
+	padding:0px;
+}
+
+@font-face {
+	font-family: "a";
+	src: url("365cool.ttf");
+}
+
+#siteTitleArea {
+	font-family: "a";
+	width: 100%;
+}
+
+#siteMenuArea {
+	background-color: #FFF3E0;
+	height: 50px;
+}
+
+#siteMenuArea2 {
+	font-size: 25px;
+	color: red;
+}
+
+#siteTitleArea2 {
+	font-size: 20px;
+}
+
+#loginArea {
+	border: black solid 2px;
+	right:10px;
+	position: fixed;
+}
+
+#result {
+	font-family: "a";
+	right: 10px;
+	top: 15px;
+	position: fixed;
+}
+
+#siteContentArea {
+	margin-left: auto;		margin-right: auto;		padding-top: 10px;
+}

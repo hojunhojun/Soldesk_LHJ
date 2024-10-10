@@ -1,0 +1,141 @@
+@charset "EUC-KR";
+#loginTbl input {
+	border: #BCAAA4 solid 2px;
+	background-color: transparent;
+	width: 200px;
+	height: 20px;
+	font-family: "a";
+}
+
+#loginTbl button {	
+	border: #BCAAA4 solid 2px;
+	background-color: transparent;
+	font-family: "a";
+}
+
+#joinTbl {
+	width: 400px;
+	border: #BCAAA4 solid 2px;
+}
+
+#loginedTbl {
+	width: 250px;
+}
+#loginedTbl .td1 {
+	width: 90px;
+}
+#loginedTbl .td1 img {
+	max-width: 80px;
+	border: black solid 1px;
+}
+#loginedTbl button {
+	font-size: 11px;
+	border: none;
+	background-color: #FFF3E0;
+	font-family: "a";
+}
+
+#infoArea {
+	font-family: "a";
+	border: black solid 1px;
+}
+
+#infoArea .td1 {
+	width: 100px;
+}
+
+#infoArea .td1 img {
+	max-width: 90px;
+}
+
+#noticeWriteTbl {
+	width: 900px;
+}
+
+#noticeWriteTbl input {
+	font-family: "a";
+	width: 500px;
+	height: 50px;
+	font-size: 25px;
+	border: #FFCCBC solid 2px;
+}
+#noticeWriteTbl textarea {
+	font-family: "a";
+	width: 500px;
+	height: 100px;
+	font-size: 20px;
+	border: #FFCCBC solid 2px;
+}
+#noticeWriteTbl button {
+	font-family: "a";
+	width: 100px;
+	height: 30px;
+	font-size: 15px;
+	border: #FFCCBC solid 2px;
+	background-color: #FFF3E0;
+}
+
+#noticeBBSArea {
+	font-family: "a";
+}
+
+#noticeBBSArea .title {
+	background-color: #FFF3E0;
+}
+
+#noticeSearchInput {
+	border:#FFCCBC solid 2px;
+	background-color: transparent;
+	padding: 5px;
+	font-family: "a";
+}
+
+#noticeSearchBtn {
+	font-family: "a";
+	border: none;
+	height: 40px;
+	color: #3D5AFE;
+	font-size: 15px;
+	background-color: transparent;
+}
+
+#noticeDetailTbl {
+	font-family: "a";
+	width: 400px;
+	border-spacing: 3px;
+	box-shadow: 3px 3px 3px black;
+}
+
+#noticeDetailTbl textarea {
+	border:#FFCCBC solid 2px;
+	background-color: transparent;
+	padding: 5px;
+	font-family: "a";
+	width: 370px;
+}
+
+#noticeDetailTbl img {
+	max-width: 75px;
+}
+#noticeDetailTbl .titleField {
+	background-color: #FFF3E0;
+}
+
+#noticeDetailTbl .imageField {
+	width: 80px;
+}
+#noticeDetailTbl input {
+	border: #3D5AFE solid 2px;
+	background-color: transparent;
+	padding: 5px;
+	font-family: "a";
+	text-align: center;
+}
+
+#noticeDetailTbl button {
+	font-family: "a";
+	border: #A1887F solid 2px;
+	height: 30px;
+	font-size: 15px;
+	background-color: transparent;
+}

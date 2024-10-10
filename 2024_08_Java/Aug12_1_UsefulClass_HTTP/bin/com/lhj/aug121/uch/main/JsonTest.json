@@ -1,0 +1,70 @@
+{
+	"documents": [
+		{
+			"address_name": "서울 중구 회현동1가 188",
+			"category_group_code": "FD6",
+			"category_group_name": "음식점",
+			"category_name": "음식점 \u003e 치킨",
+			"distance": "97",
+			"id": "11486127",
+			"phone": "",
+			"place_name": "뽀뽀치킨",
+			"place_url": "http://place.map.kakao.com/11486127",
+			"road_address_name": "서울 중구 퇴계로 68-1",
+			"x": "126.97975115459157",
+			"y": "37.559142500294776"
+		},
+		{
+			"address_name": "서울 중구 회현동1가 189",
+			"category_group_code": "FD6",
+			"category_group_name": "음식점",
+			"category_name": "음식점 \u003e 치킨 \u003e 치킨뱅이",
+			"distance": "95",
+			"id": "1058440501",
+			"phone": "02-755-6779",
+			"place_name": "치킨뱅이 회현역점",
+			"place_url": "http://place.map.kakao.com/1058440501",
+			"road_address_name": "서울 중구 퇴계로8길 2",
+			"x": "126.97986885899293",
+			"y": "37.559148827401955"
+		},
+		{
+			"address_name": "서울 중구 회현동1가 210",
+			"category_group_code": "FD6",
+			"category_group_name": "음식점",
+			"category_name": "음식점 \u003e 치킨",
+			"distance": "60",
+			"id": "18132290",
+			"phone": "02-310-9776",
+			"place_name": "남문호프치킨",
+			"place_url": "http://place.map.kakao.com/18132290",
+			"road_address_name": "서울 중구 퇴계로 67",
+			"x": "126.97934342933576",
+			"y": "37.560160556260854"
+		},
+		{
+			"address_name": "서울 중구 회현동1가 188",
+			"category_group_code": "",
+			"category_group_name": "",
+			"category_name": "가정,생활 \u003e 화장실",
+			"distance": "97",
+			"id": "456290000",
+			"phone": "",
+			"place_name": "뽀뽀치킨 개방화장실",
+			"place_url": "http://place.map.kakao.com/456290000",
+			"road_address_name": "서울 중구 퇴계로 68-1",
+			"x": "126.97974549564454",
+			"y": "37.55914249932413"
+		}
+	],
+	"meta": {
+		"is_end": true,
+		"pageable_count": 4,
+		"same_name": {
+			"keyword": "치킨",
+			"region": [],
+			"selected_region": ""
+		},
+		"total_count": 4
+	}
+}

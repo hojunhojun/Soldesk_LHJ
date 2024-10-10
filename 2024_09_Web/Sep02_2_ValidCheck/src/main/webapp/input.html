@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function validCheckkk() {
+		
+		// document : 이 html
+		// document.form이름.input이름
+		var xInput = document.f.x;
+		var pwInput = document.f.pw;
+		
+		if (!xInput.value) { // 필수검사(안쓴거 거르기)
+			alert("x는 필수입니다.");
+			xInput.focus(); // 커서위치를 가져다 놓아줌
+			return false;
+		}
+		
+		if (xInput.value.length < 3) { // 글자 수 체크(최소 글자수 3글자를 넘겼는지)
+			alert("x는 3글자 이상 입력해주세요.");	
+			xInput.value = ""; // 기존의 내용 지우기
+			xInput.focus();
+			return false;
+		}
+		
+		if (isNaN(xInput.value)) { // 숫자만 (혹시 숫자 말고 다른거 넣으면 빠꾸)
+			alert("숫자만 입력해주세요.");
+			xInput.value = ""; // 기존의 내용 지우기
+			xInput.focus();
+			return false;
+		}
+		
+		if (!pwInput.value) { // 필수검사(안쓴거 거르기)
+			alert("pw은 필수입니다.");
+			xInput.focus(); // 커서위치를 가져다 놓아줌
+			return false;
+		}
+		
+		if (pwInput.value.length < 4) { // 글자 수 체크(최소 글자수 3글자를 넘겼는지)
+			alert("pw은 4글자 이상 입력해주세요.");
+			xInput.value = ""; // 기존의 내용 지우기
+			xInput.focus();
+			return false;
+		}
+		
+		// 비밀번호에 abcd중에 하나는 무조건 있어야함
+		var a = "abcd";
+		var aOK = false;
+		// pwInput.value에 a에 있는거중에 하나라도 있으면 aOK를 true로
+		for (var i = 0; i < a.length; i++) {
+			if (pwInput.value.indexOf(a[i]) != -1) {
+				aOK = true;
+				break;
+			}
+		}
+		
+		var e = "efgh";
+		var eOK = false;
+		// pwInput.value에 e에 있는거중에 하나라도 있으면 eOK를 true로
+		for (var i = 0; i < e.length; i++) {
+			if (pwInput.value.indexOf(e[i]) != -1) {
+				eOK = true;
+				break;
+			}
+		}
+		
+		if (!aOK || !eOK) {
+			alert("비번조합")	;
+			pwInput.value = "";
+			pwInput.focus();
+			return false;
+		}
+		
+		return true;
+	}
+</script>
+</head>
+<body>
+	<!-- 
+		입력 유효성 검사(개발자가 원하는대로 제대로 입력했나)
+		1. Servlet에서 if/try써서 하자
+			인터넷을 해서 Servlet까지 써서...?
+			유효성 검사 아니라도 Servlet은 바쁜데..?
+		2. JS에서 후딱처리해버리자잉~
+			잘못입력됐으면 Servlet으로 출발도 하지말자
+			인터넷 안해도됨 / Servlet이 할일 줄어듬
+			
+			onsubmit : 버튼 눌러서 Servlet쪽으로 출발하기 직전	
+				return true; 	요청 출발
+				return false; 	요청 출발 x
+	 -->
+	<form name="f" action="Output" onsubmit="return validCheckkk();">
+		x : <input name="x" maxlength="8"> <p>
+		pw : <input name="pw" type="password"> <p>
+		<button>확인</button>
+	</form>
+</body>
+</html>

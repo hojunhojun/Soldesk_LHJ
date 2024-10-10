@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>비만도 검사</title>
+<script type="text/javascript" src="validCheck.js"></script>
+<script type="text/javascript" src="leeValidChecker_v1.0.js"></script>
+<link rel="stylesheet" href="page.css">
+</head>
+<body>
+	<form name="bForm"action="HomeController" method="post" enctype="multipart/form-data"
+		onsubmit="return check();">
+		<table>
+			<tr>
+				<th colspan="2" align="center">BMI 검사</th>
+			</tr>
+			<tr>
+				<td align="center">이름&nbsp;:</td>
+				<td><input name="name"></td>
+			</tr>
+			<tr>
+				<td align="center">키&nbsp;:</td>
+				<td><input name="height">cm</td>
+			</tr>
+			<tr>
+				<td align="center">몸무게&nbsp;:</td>
+				<td><input name="weight">kg</td>
+			</tr>
+			<tr>
+				<td align="center">사진&nbsp;:</td>
+				<td><input name="photo" type="file"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><button>결과보기</button></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

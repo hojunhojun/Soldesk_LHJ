@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource
+		name="LeePool"
+		type="javax.sql.DataSource"
+		driverClassName="oracle.jdbc.driver.OracleDriver"
+		factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+		username="lhj"
+		password="qwer1234"
+		url="jdbc:oracle:thin:@192.168.0.44:1521:xe"
+		maxTotal="500"
+		maxIdle="100"
+	/>
+</Context>

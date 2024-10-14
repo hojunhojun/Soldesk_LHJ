@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lhj.oct101smmb.menu.MenuMapper">
+	<select id="getMenu" resultType="com.lhj.oct101smmb.menu.Menu">
+		select * from oct10_menu order by m_name
+	</select>
+	<insert id="reg" parameterType="com.lhj.oct101smmb.menu.Menu">
+		insert into oct10_menu values(oct10_menu_seq.nextval, #{m_name}, #{m_price})
+	</insert>
+</mapper>

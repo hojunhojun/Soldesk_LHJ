@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lhj.gbraucp.dataroom.DataMapper">
+	<insert id="insertData" parameterType="com.lhj.gbraucp.dataroom.Data">
+		insert into gbraucp2_dataroom values(gbraucp2_dataroom_seq.nextval, #{gd_gm_id}, #{gd_name}, #{gd_data})
+	</insert>
+	<select id="getData" parameterType="com.lhj.gbraucp.dataroom.Data" resultType="com.lhj.gbraucp.dataroom.Data">
+		select * from gbraucp2_dataroom order by gd_no desc
+	</select>
+	<delete id="deleteData" parameterType="com.lhj.gbraucp.dataroom.Data">
+		delete from gbraucp2_dataroom where gd_no = #{gd_no}
+	</delete>
+</mapper>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lhj.gbraucp.member.MemberMapper">
+	<insert id="join" parameterType="com.lhj.gbraucp.member.Member">
+		insert into gbraucp2_member values(#{gm_id}, #{gm_pw}, #{gm_photo}, #{gm_birthday})
+	</insert>
+	<select id="getMemberByID" parameterType="com.lhj.gbraucp.member.Member" resultType="com.lhj.gbraucp.member.Member">
+		select * from gbraucp2_member where gm_id = #{gm_id}
+	</select>
+	<delete id="bye" parameterType="com.lhj.gbraucp.member.Member">
+		delete from GBRAUCP2_MEMBER where gm_id = #{gm_id}
+	</delete>
+	<update id="update" parameterType="com.lhj.gbraucp.member.Member">
+		update GBRAUCP2_MEMBER set gm_pw=#{gm_pw}, gm_photo=#{gm_photo} where gm_id=#{gm_id}
+	</update>
+</mapper>

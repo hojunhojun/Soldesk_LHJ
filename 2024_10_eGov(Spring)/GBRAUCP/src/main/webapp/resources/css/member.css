@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@font-face {
+	font-family: "a";
+	src: url("365cool.ttf");
+}
+#siteLoginArea {
+	position: fixed; top: 10px;	right: 10px;
+}
+#loginTbl input {
+	font-family: "a";
+	background-color: #E3F2FD;
+	border: #7986CB solid 1px;
+	height: 25px;
+}
+#loginTbl button {
+	font-family: "a";
+	background-color: #E3F2FD;
+	border: #7986CB solid 1px;
+	height: 25px;
+}
+
+#joinTbl .td2 .i3{
+	background-color: transparent;
+	width: 30px;
+}
+#joinTbl .td2 .i1{
+	background-color: transparent;
+}
+#joinTbl .td2 .i2{
+	background-color: transparent;
+}
+
+#joinTbl button {
+	font-family: "a";
+	background-color: #E3F2FD;
+	border: #7986CB solid 1px;
+	height: 25px;
+}
+#joinTbl input {
+	font-family: "a";
+	height: 25px;
+}
+
+#joinTbl .td2 {
+	background-color: #E3F2FD;
+	border: #7986CB solid 1px;
+}
+
+#loginedTbl {
+	height: 60px;
+	font-family: "a";				color: black;
+}
+#loginedTbl img{
+	max-height: 55px;				margin-right: 5px;
+}
+#loginedTbl button{
+	border: black solid 2px;					background-color: transparent;
+	font-family: "a";				color: black;
+}
+
+#infoArea {
+	font-family: "a";
+	border: black solid 1px;
+	margin-top: 250px;
+}
+
+#infoArea .td1 {
+	width: 100px;
+}
+
+#infoArea .td1 img {
+	max-width: 90px;
+}
+

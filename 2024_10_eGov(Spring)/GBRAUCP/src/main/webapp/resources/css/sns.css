@@ -1,0 +1,112 @@
+@charset "UTF-8";
+@font-face {
+	font-family: "a";
+	src: url("365cool.ttf");
+}
+#snsWriteArea {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+#snsWriteArea textarea {
+	font-family: "a";
+	background-color: white;
+	border: black solid 1px;
+	width: 700px;
+	height: 100px;
+	resize: none;
+}
+#snsWriteArea button {
+	font-family: "a";
+	background-color: white;
+	border: black solid 1px;
+}
+
+.aSNSPost {
+	border-bottom: #B39DDB solid 1px;
+	border-right: #B39DDB solid 1px;
+	box-shadow: black 3px 3px 3px;
+	margin-bottom: 20px;
+}
+
+.aSNSPost button {
+	background-color: #C5CAE9;
+	font-family: "a";
+	border: #5C6BC0 solid 1px;
+}
+
+.aSNSPost .td1 {
+	width: 100px;
+}
+.aSNSPost .td1 img {
+	max-width: 90px;
+}
+
+#blank1 {
+	height: 190px;
+	background-color: #E8EAF6;
+}
+#blank2 {
+	height: 100px;
+	background-color: #E8EAF6;
+}
+
+#snsPageLeft {
+	position: fixed;
+	left: 10%;
+	top: 50%;
+}
+
+#snsPageLeft img {
+	width: 50px;
+	cursor: pointer;
+}
+
+#snsPageRight {
+	position: fixed;
+	right: 10%;
+	top: 50%;
+}
+
+#snsPageRight img {
+	width: 50px;
+	cursor: pointer;
+}
+
+#snsSearchArea .td1 input {
+	width: 300px;
+	height: 25px;
+	font-family: "a";
+	border: none;
+	border-bottom: #B39DDB solid 1px;
+	border-right: #B39DDB solid 1px;
+	box-shadow: black 2px 2px 2px;
+}
+#snsSearchArea .td1 button {
+	width: 50px;
+	height: 25px;
+	font-family: "a";
+	border: none;
+	border-bottom: #B39DDB solid 1px;
+	border-right: #B39DDB solid 1px;
+	box-shadow: black 2px 2px 2px;
+}
+
+.srWriter {
+	text-shadow: #FFC107 2px 2px 2px;
+}
+
+.srTxt {
+	border: none;
+	background-color: transparent;
+	border-bottom: #673AB7 solid 1px;
+}
+
+.srButton {
+	border: none;
+	border-bottom: #B39DDB solid 1px;
+	border-right: #B39DDB solid 1px;
+	box-shadow: #E1BEE7 1px 1px 1px;
+}

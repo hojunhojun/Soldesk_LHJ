@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@font-face {
+	font-family: "a";
+	src: url("365cool.ttf");
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #E8EAF6;
+	color: #283593;
+}
+a {
+	text-decoration: none;
+}
+table {
+	font-family: "a";
+}
+#siteTitleArea {
+	background-color: #E8EAF6;
+	border-spacing: 20px;
+	width: 100%;
+	position: fixed;
+	top: 0px;	left: 0px;
+}
+
+#siteTitle {
+	font-size: 35px;
+	height: 70px;
+}
+
+#siteTitleArea .td1{
+	border: #7986CB solid 2px;
+	width: 33%;
+	height: 80px;
+	font-size: 20px;
+}
+#siteTitleArea .td2{
+	border: #7986CB solid 2px;
+	width: 33%;
+	height: 80px;
+	font-size: 20px;
+}
+
+#siteContentArea {
+	border-spacing: 20px;
+	width: 100%;
+	top: 70px;	left: 0px;
+}

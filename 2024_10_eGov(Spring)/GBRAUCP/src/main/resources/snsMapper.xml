@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lhj.gbraucp.sns.SNSMapper">
+	<insert id="write" parameterType="com.lhj.gbraucp.sns.SNSPost">
+		insert into gbraucp2_sns
+		values(gbraucp2_sns_seq.nextval, #{gs_txt}, sysdate, #{gs_writer})
+	</insert>
+	<select id="get" parameterType="com.lhj.gbraucp.sns.SNSPostSelector" resultType="com.lhj.gbraucp.sns.SNSPost">
+		select gs_no, gs_txt, gs_date, gs_writer, gm_photo from ( select gm_id, gm_photo from GBRAUCP2_MEMBER where gm_id in (select gs_writer from (select rownum as rn, gs_no, gs_txt, gs_date, gs_writer from 
+				(select * from GBRAUCP2_SNS where gs_writer like '%'||#{search}||'%' or gs_txt like '%'||#{search}||'%' 
+				order by gs_date desc)) where rn &gt;= #{start} and rn &lt;= #{end})), 
+				(select gs_no, gs_txt, gs_date, gs_writer 
+				from (select rownum as rn, gs_no, gs_txt, gs_date, gs_writer from 
+				(select * from GBRAUCP2_SNS where gs_writer like '%'||#{search}||'%' or gs_txt like '%'||#{search}||'%' order by gs_date desc)) where rn &gt;= #{start} and rn &lt;= #{end}) where gm_id = gs_writer order by gs_date desc
+	</select>
+	<select id="getPostCount" parameterType="com.lhj.gbraucp.sns.SNSPostSelector" resultType="java.lang.Integer">
+		select count(*) from GBRAUCP2_sns where gs_txt like '%'||#{search}||'%' or gs_writer like '%'||#{search}||'%'
+	</select>
+	<delete id="delete" parameterType="com.lhj.gbraucp.sns.SNSPost">
+		delete from gbraucp2_sns where gs_no = #{gs_no}
+	</delete>
+	<update id="update" parameterType="com.lhj.gbraucp.sns.SNSPost">
+		update gbraucp2_sns set gs_txt = #{gs_txt} where gs_no = #{gs_no}
+	</update>
+	<insert id="writeReply" parameterType="com.lhj.gbraucp.sns.SNSReply">
+		insert into gbraucp2_sns_reply values(gbraucp2_sns_reply_seq.nextval, #{gsr_gs_no}, #{gsr_writer}, #{gsr_txt}, sysdate)
+	</insert>
+	<select id="getReply" parameterType="com.lhj.gbraucp.sns.SNSPost" resultType="com.lhj.gbraucp.sns.SNSReply">
+		select * from GBRAUCP2_sns_reply where gsr_gs_no = #{gs_no}
+	</select>
+	<update id="updateReply" parameterType="com.lhj.gbraucp.sns.SNSReply">
+		update gbraucp2_sns_reply set gsr_txt = #{gsr_txt} where gsr_no = #{gsr_no}
+	</update>
+	<delete id="deleteReply" parameterType="com.lhj.gbraucp.sns.SNSReply">
+		delete from gbraucp2_sns_reply where gsr_no = #{gsr_no}
+	</delete>
+</mapper>

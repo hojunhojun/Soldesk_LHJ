@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "a";
+	src: url("365cool.ttf");
+}
+
+#dataroomTbl {
+	margin-top: 220px;
+}
+
+#dataArea {
+	width: 1000px;
+}
+
+.dataTbl {
+	border: black solid 2px;
+	box-shadow: #757575 4px 4px 4px;
+	margin-bottom: 20px;
+	margin-left: 25px;
+	float: left;
+	width: 200px;
+	height: 50px;
+}
+
+.td1 {
+	width: 100px;
+}
+
+#deleteBtn {
+	font-family: "a";
+	background-color: white;
+	border: black solid 1px;
+}
+
+#dataInsertArea {
+	position: fixed;
+	bottom: 0px;
+	width:100%;
+}
+
+#dataInsertTbl {
+	border: black solid 2px;
+	box-shadow: #757575 4px 4px 4px;
+	background-color: #E8EAF6;
+}
+
+#dataInsertTbl button {
+	font-family: "a";
+	background-color: white;
+	border: black solid 1px;
+}
+
+#dataInsertBtn {
+	border: none;
+	border-left: black solid 2px;
+}

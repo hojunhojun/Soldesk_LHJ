@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lhj.gbraucp.gallery.PhotoMapper">
+	<insert id="insertPhoto" parameterType="com.lhj.gbraucp.gallery.Photo">
+		insert into gbraucp2_gallery values(gbraucp2_gallery_seq.nextval, #{p_gm_id}, #{p_name}, #{p_photo})
+	</insert>
+	<select id="getPhoto" resultType="com.lhj.gbraucp.gallery.Photo">
+		select * from gbraucp2_gallery
+	</select>
+	<delete id="deletePhoto" parameterType="com.lhj.gbraucp.gallery.Photo">
+		delete from gbraucp2_gallery where p_no = #{p_no}
+	</delete>
+</mapper>
